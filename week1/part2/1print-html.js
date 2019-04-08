@@ -1,4 +1,3 @@
-console.log("Hi from my super cool app");
 const request = require('request');
 var args = process.argv.slice(2)
 
