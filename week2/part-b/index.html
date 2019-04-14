@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>meow</title>
+  <style>
+
+  </style>
+  <script type="text/javascript" src='partb.js'></script>
+</head>
+
+<body>
+  <!-- greeting section -->
+  <div class="greeting">
+    <h2>hello friend</h2>
+  </div>
+  <!-- section end -->
+
+  <!-- ready to get insult -->
+  <div class="band">
+    <p>What's your favourite band?</p>
+  </div>
+  <form action="/submit">
+    <input type="text" name="bandName">
+    <input type="submit" value="submit">
+  </form>
+  <!-- section end -->
+
+  <!-- let's insult -->
+  <h1>{{result}} </h1>
+  <p id="insult">
+
+  </p>
+
+  <!-- section end -->
+  <script>
+    // building a random array of insult
+    function test() {
+      let text = ["meow", "yo", "hey"]
+      let insult = text[Math.floor(Math.random() * text.length)]
+      console.log(insult)
+      document.getElementById("insult").innerText = insult
+    }
+    test()
+    console.log("test")
+  </script>
+</body>
+
+</html>
