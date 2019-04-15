@@ -6,8 +6,8 @@ let path = require('path')
 app.get('/', (req, res) => res.sendFile(path.join(__dirname + '/index.html')))
 
 app.get('/submit', function (req, res) {
-  let website = req.query.url
-  res.redirect(website)
+  let website = req.query.url;
+  res.redirect(website);
 })
 
 
