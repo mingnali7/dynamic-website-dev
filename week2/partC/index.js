@@ -10,4 +10,5 @@ app.get('/submit', function (req, res) {
   res.redirect(website)
 })
 
+
 app.listen(8000, () => console.log('listening on port 8000!'))
